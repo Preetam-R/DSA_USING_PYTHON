@@ -13,7 +13,18 @@
 
 #1. Creating an empty list
 
-Ht = [None,None,None,None,None,None,None,None,None,None]
+Ht =  [
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  []
+]
 
 '''
 -------------------------------------------------------------------------------------------
@@ -40,16 +51,36 @@ print("Preetam has the hash code of:",hash_function("Preetam"))
 
 def add(name):
     index = hash_function(name)
-    Ht[index] = name
+    my_list[index].append(name)
 
 # hash_function("Preetam")
-add("Preetam")
-print(Ht)
+add("Bob")
 
+add('Pete')
+add('Jones')
+add('Lisa')
+add('Siri')
+
+print(Ht)
 '''
 -------------------------------------------------------------------------------------------
 '''
 
 # 4.Looking up an element using a hash function.
+
+def contains(name):
+  index = hash_function(name)
+  return my_list[index] == name
+
+print("'Pete' is in the Hash Table:", contains('Pete'))
+
+'''
+-------------------------------------------------------------------------------------------
+'''
+
+# 5. Colision Handling
+add('Stuart')
+print(Ht)
+
 
 
