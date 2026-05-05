@@ -82,5 +82,8 @@ print("'Pete' is in the Hash Table:", contains('Pete'))
 add('Stuart')
 print(Ht)
 
+''' Searching for "Stuart" now takes a little bit longer time, because we also find "Lisa"
+ in the same bucket, but still much faster than searching the entire Hash Table.'''
 
+ 
 
